@@ -70,6 +70,14 @@ h6 {
   width: 130rem;
   margin: 0 auto;
 }
+:root {
+--text-size-medium: 1.6rem;
+}
+.block__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .button {
   border-radius: 5rem;
   padding: 1rem 3rem;
@@ -90,12 +98,13 @@ h6 {
   align-items: center;
   justify-content: space-between;
 }
-.header__menu {
+/* .header__menu {
   display: flex;
+  justify-content: center;
   align-items: center;
-}
+} */
 .header__nav a {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   /* font-weight: 400;
   line-height: 150%; */
 }
@@ -111,7 +120,7 @@ h6 {
 .header__button {
   margin-left: 55.3rem;
   background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 150%;
 }
 .main-display {
@@ -142,16 +151,16 @@ h6 {
 }
 .main-display__button {
   background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
 }
 .timer__item {
   width: 10.2rem;
   height: 11.2rem;
   background-color: #121212;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  flex-direction: column;
 }
 .timer__item:not(:last-child) {
   margin-right: 3rem;
@@ -162,7 +171,7 @@ h6 {
   line-height: 150%;
 }
 .timer__text {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 150%;
   opacity: 0.4;
 }
@@ -190,12 +199,15 @@ h6 {
   line-height: 140%;
 }
 .work__description {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 160%;
 }
 .process {
   position: relative;
   padding-bottom: 20rem;
+}
+.process .process__img {
+  transform: rotate(43deg);
 }
 .process__img {
   width: 9rem;
@@ -204,6 +216,7 @@ h6 {
 }
 .process__header {
   margin-bottom: 4.9rem;
+  padding-top: 1rem;
   font-weight: 700;
   font-size: 4.8em;
   line-height: 140%;
@@ -215,7 +228,7 @@ h6 {
   max-width: 41.1rem;
   margin-bottom: 8rem;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 160%;
   opacity: 0.5;
 }
@@ -246,3 +259,101 @@ h6 {
 .process__columns {
   display: flex;
 }
+.comand {
+  padding-bottom: 20rem;
+}
+.comand__title {
+  margin-bottom: 11rem;
+}
+.comand__header {
+  margin-bottom: 0;
+}
+.comand__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+.comand__item {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+
+}
+.comand__img {
+  width: 19rem;
+  height: 19rem;
+  margin-bottom: 4rem;
+  border-radius: 50%;
+}
+.comand__name {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 2.4em;
+  line-height: 140%;
+}
+.comand__prifessional {
+  margin-bottom: 3rem;
+  font-weight: 400;
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+}
+.comand_link {
+  font-weight: 400;
+  font-size: var(--text-size-medium);
+  line-height: 150%;
+  border: .1rem solid #ffffff;
+}
+.assembly {
+  padding-bottom: 24.4rem;
+  display: flex;
+  
+
+}
+.assembly__wrap {
+  /* display: flex;  
+  justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+}
+.assembly__header {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 140%;
+}
+.assambly__description {
+  margin-bottom: 4.52rem;
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+}
+.assambly__button {
+  margin-bottom: 5.8rem;
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+  font-weight: 700;
+  font-size: var(--text-size-medium);
+  line-height: 150%;
+  
+}
+.assembly__social {
+  display: flex;
+}
+.assembly__item {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);; 
+border-radius: 50%;
+width: 5rem;
+height: 5rem;
+}
+.assembly-item__image {
+  width: 505px;
+  height: 50%;
+}
+.assembly__item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+
